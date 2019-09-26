@@ -1,0 +1,20 @@
+{
+  "name": "Notekeeper",
+  "short_name": "Notekeeper",
+  "theme_color": "#ffd304",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [{
+      "src": "https://notekeeper.vyse.in/static/images/logos/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "https://notekeeper.vyse.in/static/images/logos/logo.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
