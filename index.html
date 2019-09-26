@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notekeeper</title>
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="<%= htmlWebpackPlugin.files.publicPath %>static/images/logos/logo.png" />
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="<%= htmlWebpackPlugin.files.publicPath %>static/images/logos/logo.png" />
+  <link rel="manifest" href="<%= htmlWebpackPlugin.files.publicPath %>manifest.json" />
+  <meta name="theme-color" content="#ffd304" />
+
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Notekeeper" />
+  <link rel="apple-touch-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/images/logos/logo.png" />
+  <link rel="mask-icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/images/logos/logo.png" color="#ffd304" />
+  <!-- Add to home screen for Windows -->
+  <meta name="msapplication-TileImage"
+    content="<%= htmlWebpackPlugin.files.publicPath %>static/images/logos/logo.png" />
+  <meta name="msapplication-TileColor" content="#ffd304" />
+  <% for (var chunk of webpack.chunks) { for (var file of chunk.files) { if
+    (file.match(/\.(js|css)$/)) { %>
+  <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>"
+    as="<%= file.match(/\.css$/)?'style':'script' %>" />
+  <% }}} %>
+
+  <link rel="canonical" href="https://notekeeper.vyse.in" />
+</head>
+
+<body>
+  <noscript>
+    Ouch! Javascript is required.
+  </noscript>
+  <div id="app"></div>
+  <!-- Todo: only include in production -->
+  <%= htmlWebpackPlugin.options.serviceWorkerLoader %>
+  <!-- built files will be auto injected -->
+</body>
+</html>

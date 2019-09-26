@@ -1,0 +1,6 @@
+This app heavily borrows from the following:
+
+Project: NoteRiot by riot.ai (https://gitlab.com/riot.ai/NoteRiot)
+App Icon: Alex Paul via Dribble (https://dribbble.com/AlexPaul)
+Blockstack: https://github.com/blockstack
+Ouch by Icons8: https://icons8.com/ouch
