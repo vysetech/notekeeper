@@ -28,6 +28,18 @@
               class="btn btn--b btn--primary btn--large"
               style="color:black;background-color:#fff;padding: 1.5em;"
             >Sign in with Blockstack</a>
+            <a
+              href="https://www.producthunt.com/posts/notekeeper-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-notekeeper-2"
+              target="_blank"
+            >
+              <img
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=169272&theme=light"
+                alt="Notekeeper - Decentralized Note Keeping App | Product Hunt Embed"
+                style="width: 250px; height: 54px;"
+                width="250px"
+                height="54px"
+              />
+            </a>
           </div>
         </div>
         <div class="pd pd--right pd--dark">
